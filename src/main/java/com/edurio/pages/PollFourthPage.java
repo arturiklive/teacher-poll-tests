@@ -32,6 +32,7 @@ public class PollFourthPage {
         WaitingUtils.waitUntilElem(driver, FROM_CHILD_BUTTON, 20);
         JsClickUtils.javaScriptClick(driver, FROM_CHILD_BUTTON);
     }
+
     @Step("I click the Next button.")
     public void clickNext() {
         NextButton.click(driver);

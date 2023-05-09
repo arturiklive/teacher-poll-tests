@@ -13,6 +13,7 @@ public class TeacherFinishPage {
     public TeacherFinishPage(WebDriver driver) {
         this.driver = driver;
     }
+
     public boolean checkIfPageLoaded() throws InterruptedException {
         return PageLoaded.check(driver, FINISH_SURVEY_BUTTON);
     }

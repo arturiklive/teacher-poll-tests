@@ -9,6 +9,7 @@ import static com.edurio.drivers.DriverProvider.driver;
 
 public class PollFirstSteps {
     PollFirstPage pollFirstPage = new PollFirstPage(driver());
+
     @Then("the First page loads")
     public void thePageLoads() throws InterruptedException {
         Assert.assertTrue(pollFirstPage.checkIfPageLoaded(), "PollFirstPage is not loaded");

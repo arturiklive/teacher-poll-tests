@@ -14,6 +14,7 @@ public class PollFifthPage {
     public PollFifthPage(WebDriver driver) {
         this.driver = driver;
     }
+
     public boolean checkIfPageLoaded() throws InterruptedException {
         return PageLoaded.check(driver, FINISH_TEXTAREA_LINK);
     }
@@ -24,6 +25,7 @@ public class PollFifthPage {
         WaitingUtils.waitUntilElem(driver, FINISH_TEXTAREA_LINK, 20);
         driver.findElement(FINISH_TEXTAREA_LINK).sendKeys(addComment);
     }
+
     @Step("Click the button Finish survey.")
     public void clickButtonFinishSurvey() {
         NextButton.click(driver);

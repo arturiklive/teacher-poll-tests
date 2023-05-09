@@ -9,6 +9,7 @@ import static com.edurio.drivers.DriverProvider.driver;
 
 public class PollFourthSteps {
     PollFourthPage pollFourthPage = new PollFourthPage(driver());
+
     @Then("the Fourth page loads")
     public void theFourthPageLoads() throws InterruptedException {
         Assert.assertTrue(pollFourthPage.checkIfPageLoaded(), "PollFourthPage is not loaded");
@@ -23,6 +24,7 @@ public class PollFourthSteps {
     public void iSelectTheOptionsFromMyChild() {
         pollFourthPage.selectFromChild();
     }
+
     @And("I click 'Next' to follow to the Fifth page")
     public void iClickNextButton() {
         pollFourthPage.clickNext();

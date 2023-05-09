@@ -39,6 +39,7 @@ public class PollSecondPage {
         WaitingUtils.waitUntilElem(driver, ADD_COMMENT_TEXTAREA_LINK, 20);
         driver.findElement(ADD_COMMENT_TEXTAREA_LINK).sendKeys(addComment);
     }
+
     @Step("Click 'Next' button")
     public void clickNext() {
         NextButton.click(driver);

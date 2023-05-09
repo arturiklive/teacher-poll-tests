@@ -9,6 +9,7 @@ import static com.edurio.drivers.DriverProvider.driver;
 
 public class PollFifthSteps {
     PollFifthPage pollFifthPage = new PollFifthPage(driver());
+
     @Then("the Fifth page loads")
     public void theFifthPageLoads() throws InterruptedException {
         Assert.assertTrue(pollFifthPage.checkIfPageLoaded(), "PollFifthPage is not loaded");

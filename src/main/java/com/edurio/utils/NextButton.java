@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class NextButton {
     private static final By SURVEY_NEXT_BUTTON = By.xpath("//button[@class='btn btn-full nw-survey-filing-next-link']");
+
     @Step("Click the button Next")
     public static void click(WebDriver driver) {
         WaitingUtils.waitUntilElem(driver, SURVEY_NEXT_BUTTON, 20);

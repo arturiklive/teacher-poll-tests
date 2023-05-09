@@ -25,6 +25,7 @@ public class PollFirstPage {
         WaitingUtils.waitUntilElem(driver, YEAR_3_BUTTON, 20);
         JsClickUtils.javaScriptClick(driver, YEAR_3_BUTTON);
     }
+
     @Step("Click the button 'Next'")
     public void clickNext() {
         NextButton.click(driver);

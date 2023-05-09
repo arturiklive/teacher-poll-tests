@@ -9,6 +9,7 @@ import static com.edurio.drivers.DriverProvider.driver;
 
 public class PollSecondSteps {
     PollSecondPage pollSecondPage = new PollSecondPage(driver());
+
     @Then("the Second page loads")
     public void theSecondPageLoads() throws InterruptedException {
         Assert.assertTrue(pollSecondPage.checkIfPageLoaded(), "PollSecondPage is not loaded");
@@ -28,6 +29,7 @@ public class PollSecondSteps {
     public void iInsertTheText(String text) {
         pollSecondPage.addComment(text);
     }
+
     @And("I click 'Next' to follow to the Third page")
     public void iClickNext() {
         pollSecondPage.clickNext();
