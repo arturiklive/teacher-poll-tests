@@ -24,8 +24,12 @@ public class PollSecondSteps {
         pollSecondPage.clickAddCommentLink();
     }
 
-    @And("I insert the text {string} and click 'Next'")
-    public void iInsertTheTextAndClickNext(String text) {
-        pollSecondPage.addCommentAndClickNext(text);
+    @And("I insert the text {string}")
+    public void iInsertTheText(String text) {
+        pollSecondPage.addComment(text);
+    }
+    @And("I click 'Next' to follow to the Third page")
+    public void iClickNext() {
+        pollSecondPage.clickNext();
     }
 }

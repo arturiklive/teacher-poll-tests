@@ -14,8 +14,13 @@ public class PollFirstSteps {
         Assert.assertTrue(pollFirstPage.checkIfPageLoaded(), "PollFirstPage is not loaded");
     }
 
-    @And("I select the option 'Year 3' for question 1 and click 'Next'")
-    public void iSelectTheOptionYearAndClickNext() {
-        pollFirstPage.selectYear3AndClickNext();
+    @And("I select the option 'Year 3' for question 1")
+    public void iSelectTheOptionYear() {
+        pollFirstPage.selectYear3();
+    }
+
+    @And("I click 'Next' to follow to the Second page")
+    public void iClickNextToFollowToTheSecondPage() {
+        pollFirstPage.clickNext();
     }
 }

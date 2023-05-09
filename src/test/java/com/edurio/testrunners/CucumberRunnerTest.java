@@ -1,4 +1,4 @@
-package com.edurio;
+package com.edurio.testrunners;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 

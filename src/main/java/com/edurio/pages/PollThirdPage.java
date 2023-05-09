@@ -28,9 +28,12 @@ public class PollThirdPage {
     }
 
     @Step("Select the option 'Quite confident' for question 4.")
-    public void selectQuiteConfidentNext() {
+    public void selectQuiteConfident() {
         WaitingUtils.waitUntilElem(driver, QUITE_CONFIDENT_BUTTON, 20);
         JsClickUtils.javaScriptClick(driver, QUITE_CONFIDENT_BUTTON);
+    }
+    @Step("I click 'Next' to follow to the Fourth page.")
+    public void clickNext() {
         NextButton.click(driver);
     }
 }

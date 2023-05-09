@@ -1,4 +1,4 @@
-package com.edurio.ui;
+package com.edurio.testrunners;
 
 import com.edurio.drivers.DriverFactory;
 import com.edurio.pages.*;
@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TeacherPollTest {
+public class SeleniumPollTest {
     private static WebDriver driver;
 
     @BeforeClass
@@ -29,23 +29,27 @@ public class TeacherPollTest {
 
         PollFirstPage pollFirstPage = new PollFirstPage(driver);
         Assert.assertTrue(pollFirstPage.checkIfPageLoaded(), "PollFirstPage is not loaded");
-        pollFirstPage.selectYear3AndClickNext();
+        pollFirstPage.selectYear3();
+        pollFirstPage.clickNext();
 
         PollSecondPage pollSecondPage = new PollSecondPage(driver);
         Assert.assertTrue(pollSecondPage.checkIfPageLoaded(), "PollSecondPage is not loaded");
         pollSecondPage.selectQuiteSatisfied();
         pollSecondPage.clickAddCommentLink();
-        pollSecondPage.addCommentAndClickNext("We joined only 3 months ago.");
+        pollSecondPage.addComment("We joined only 3 months ago.");
+        pollSecondPage.clickNext();
 
         PollThirdPage pollThirdPage = new PollThirdPage(driver);
         Assert.assertTrue(pollThirdPage.checkIfPageLoaded(), "PollThirdPage is not loaded");
         pollThirdPage.selectDontKnow();
-        pollThirdPage.selectQuiteConfidentNext();
+        pollThirdPage.selectQuiteConfident();
+        pollThirdPage.clickNext();
 
         PollFourthPage pollFourthPage = new PollFourthPage(driver);
         Assert.assertTrue(pollFourthPage.checkIfPageLoaded(), "PollFourthPage is not loaded");
         pollFourthPage.selectByEmail();
-        pollFourthPage.selectFromChildNext();
+        pollFourthPage.selectFromChild();
+        pollFourthPage.clickNext();
 
         PollFifthPage pollFifthPage = new PollFifthPage(driver);
         Assert.assertTrue(pollFifthPage.checkIfPageLoaded(), "PollFifthPage is not loaded");

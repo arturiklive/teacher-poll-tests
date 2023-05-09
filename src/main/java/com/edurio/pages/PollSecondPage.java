@@ -35,9 +35,12 @@ public class PollSecondPage {
     }
 
     @Step("In the input field that appeared, insert the text 'We joined only 3 months ago.'")
-    public void addCommentAndClickNext(String addComment) {
+    public void addComment(String addComment) {
         WaitingUtils.waitUntilElem(driver, ADD_COMMENT_TEXTAREA_LINK, 20);
         driver.findElement(ADD_COMMENT_TEXTAREA_LINK).sendKeys(addComment);
+    }
+    @Step("Click 'Next' button")
+    public void clickNext() {
         NextButton.click(driver);
     }
 }

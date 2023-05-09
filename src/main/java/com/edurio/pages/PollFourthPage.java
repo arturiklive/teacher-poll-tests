@@ -28,9 +28,12 @@ public class PollFourthPage {
     }
 
     @Step("Select the options From my child.")
-    public void selectFromChildNext() {
+    public void selectFromChild() {
         WaitingUtils.waitUntilElem(driver, FROM_CHILD_BUTTON, 20);
         JsClickUtils.javaScriptClick(driver, FROM_CHILD_BUTTON);
+    }
+    @Step("I click the Next button.")
+    public void clickNext() {
         NextButton.click(driver);
     }
 }

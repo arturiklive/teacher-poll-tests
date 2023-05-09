@@ -14,13 +14,17 @@ public class PollFourthSteps {
         Assert.assertTrue(pollFourthPage.checkIfPageLoaded(), "PollFourthPage is not loaded");
     }
 
-    @And("I select the options 'By e-mail' for question 4")
+    @And("I select the options 'By e-mail' for question 5")
     public void iSelectTheOptionsByEMail() {
         pollFourthPage.selectByEmail();
     }
 
-    @And("I select the options 'From my child' for question 5 and click 'Next'")
+    @And("I select the options 'From my child' for question 5")
     public void iSelectTheOptionsFromMyChild() {
-        pollFourthPage.selectFromChildNext();
+        pollFourthPage.selectFromChild();
+    }
+    @And("I click 'Next' to follow to the Fifth page")
+    public void iClickNextButton() {
+        pollFourthPage.clickNext();
     }
 }

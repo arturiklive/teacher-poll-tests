@@ -1,6 +1,7 @@
 package com.edurio.steps;
 
 import com.edurio.pages.PollThirdPage;
+import com.edurio.utils.NextButton;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
@@ -19,8 +20,12 @@ public class PollThirdSteps {
         pollThirdPage.selectDontKnow();
     }
 
-    @And("I select the option 'Quite confident' for question 4 and click 'Next'")
+    @And("I select the option 'Quite confident' for question 4")
     public void iSelectTheOptionQuiteConfidentForQuestion() {
-        pollThirdPage.selectQuiteConfidentNext();
+        pollThirdPage.selectQuiteConfident();
+    }
+    @And("I click 'Next' to follow to the Fourth page")
+    public void iClickNextButton() {
+        pollThirdPage.clickNext();
     }
 }
