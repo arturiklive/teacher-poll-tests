@@ -1,9 +1,14 @@
 # teacher-poll-tests
 
-Simple test Java + Selenium + Maven + Cucumber for https://edurio.com/teacher/poll/
+Simple test Java + Selenium + Maven + Cucumber for https://edurio.com/poll/TftMJA
 
-TEST STEPS:
+TESTING GOAL:
+The goal is to test the survey tool available at https://edurio.com/poll/TftMJA to ensure it functions correctly and meets the intended purpose. The objective is to verify that teachers can create surveys, add questions, choose response options, preview surveys, and analyze the collected data accurately. The testing aims to identify any defects, issues, or usability problems and ensure a smooth and satisfactory user experience for teachers.
 
+EXPECTED:
+Survey is completed with no errors. All elements are available through testing process. Confirmation modal shown at the end.
+
+TEST REQUIREMENTS:
 1. Open the link https://edurio.com/poll/TftMJA
 2. Accept cookies by clicking “OK”.
 3. Click the button “Start the poll”
@@ -18,3 +23,5 @@ TEST STEPS:
 8. Once the page loads, in the input field for question 6 insert the text “Make learning
    more relevant.”. Click the button “Finish survey”.
 9. On the confirmation modal click the button “Finish survey”.
+
+TEST STEPS:
