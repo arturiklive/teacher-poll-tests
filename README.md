@@ -23,5 +23,3 @@ TEST REQUIREMENTS:
 8. Once the page loads, in the input field for question 6 insert the text “Make learning
    more relevant.”. Click the button “Finish survey”.
 9. On the confirmation modal click the button “Finish survey”.
-
-TEST STEPS:
