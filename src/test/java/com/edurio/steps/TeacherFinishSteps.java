@@ -19,4 +19,9 @@ public class TeacherFinishSteps {
     public void iClickFinishSurvey() {
         teacherFinishPage.clickFinishSurveyButton();
     }
+
+    @Then("survey finished page loads")
+    public void surveyFinishedPageLoads() throws InterruptedException {
+        Assert.assertTrue(teacherFinishPage.checkIfSurveyPassed(), "Survey finish page not loaded");
+    }
 }

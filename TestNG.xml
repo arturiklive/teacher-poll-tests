@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Edurio polls">
+    <test name="Regression Test for poll https://edurio.com/poll/TftMJA (Selenium classic)">
+        <classes>
+            <class name="com.edurio.testrunners.SeleniumPollTest"/>
+        </classes>
+    </test>
+    <test name="Regression Test for poll https://edurio.com/poll/TftMJA (Cucumber)">
+        <classes>
+            <class name="com.edurio.testrunners.CucumberRunnerTest"/>
+        </classes>
+    </test>
+</suite>

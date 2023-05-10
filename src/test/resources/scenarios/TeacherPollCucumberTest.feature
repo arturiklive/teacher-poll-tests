@@ -31,3 +31,4 @@ Feature: Teacher Poll Test
 
     Then the confirmation modal appears
     And I click 'Finish survey'
+    Then survey finished page loads

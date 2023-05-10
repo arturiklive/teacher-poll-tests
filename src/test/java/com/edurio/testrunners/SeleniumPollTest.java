@@ -19,8 +19,8 @@ public class SeleniumPollTest {
     }
 
 
-    @Test(priority = 1, description = "UI Testings - Survey")
-    @Description("Executing survey")
+    @Test(priority = 1, description = "Regression - Survey - TftMJA")
+    @Description("Expected: Survey is completed with no errors. All elements are available. Confirmation page shown.")
     public void testElementsTextBox() throws InterruptedException {
         TeacherStartPage teacherStartPage = new TeacherStartPage(driver);
         teacherStartPage.openPage("https://edurio.com/poll/TftMJA");
@@ -59,6 +59,7 @@ public class SeleniumPollTest {
         TeacherFinishPage teacherFinishPage = new TeacherFinishPage(driver);
         Assert.assertTrue(teacherFinishPage.checkIfPageLoaded(), "TeacherFinishPage is not loaded");
         teacherFinishPage.clickFinishSurveyButton();
+        Assert.assertTrue(teacherFinishPage.checkIfSurveyPassed(), "Survey finish page not loaded");
     }
 
     @AfterClass

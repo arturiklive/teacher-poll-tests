@@ -1,14 +1,22 @@
 # teacher-poll-tests
 
-Simple test Java + Selenium + Maven + Cucumber for https://edurio.com/poll/TftMJA
+Simple test for https://edurio.com/poll/TftMJA
+
+Technology stack:
+Maven, Java, Selenium, Cucumber, Allure
+
+Look com.edurio.testrunners for CucumberRunnerTest or SeleniumPollTest
+Or simple use mvn test for TestNG.xml
 
 TESTING GOAL:
-The goal is to test the survey tool available at https://edurio.com/poll/TftMJA to ensure it functions correctly and meets the intended purpose. The objective is to verify that teachers can create surveys, add questions, choose response options, preview surveys, and analyze the collected data accurately. The testing aims to identify any defects, issues, or usability problems and ensure a smooth and satisfactory user experience for teachers.
+The goal is to test the survey tool available at https://edurio.com/poll/TftMJA to ensure it functions correctly and meets the intended purpose.
+The objective is to verify that teachers can create surveys, add questions, choose response options, preview surveys, and analyze the collected data accurately.
+The testing aims to identify any defects, issues, or usability problems and ensure a smooth and satisfactory user experience for teachers.
 
 EXPECTED:
-Survey is completed with no errors. All elements are available through testing process. Confirmation modal shown at the end.
+Survey is completed with no errors. All elements are available through testing process. Confirmation page shown at the end.
 
-TEST REQUIREMENTS:
+TEST TASK:
 1. Open the link https://edurio.com/poll/TftMJA
 2. Accept cookies by clicking “OK”.
 3. Click the button “Start the poll”
