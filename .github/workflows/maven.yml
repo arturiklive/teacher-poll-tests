@@ -38,3 +38,7 @@ jobs:
       with:
         name: allure-report
         path: target/allure-report
+      runs-on: ubuntu-latest
+      defaults:
+        run:
+          shell: bash -eux
