@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 
 public class PageLoaded {
     public static boolean check(WebDriver driver, By element) throws InterruptedException {
-        Thread.sleep(1500);
-        WaitingUtils.waitUntilElem(driver, element, 20);
-        WebElement isElementPresent = driver.findElement(element);
-        return isElementPresent != null;
+            Thread.sleep(1500);
+            WaitingUtils.waitUntilElem(driver, element, 20);
+            WebElement isElementPresent = driver.findElement(element);
+            return isElementPresent != null;
+        }
     }
-}

@@ -10,6 +10,7 @@ public class DriverFactory {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notification");
+        options.addArguments("--headless");
         return new ChromeDriver(options);
     }
 }
