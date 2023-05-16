@@ -38,6 +38,3 @@ jobs:
       with:
         name: allure-report
         path: target/allure-report
-      defaults:
-        run:
-          shell: bash -eux
