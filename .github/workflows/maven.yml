@@ -34,7 +34,7 @@ jobs:
         ./allure/allure-2.22.0/bin/allure generate target/allure-results --clean -o target/allure-report
 
     - name: Publish Allure Report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
-        name: allure-report
-        path: target/allure-report
+          name: allure-report
+          path: target/allure-report
