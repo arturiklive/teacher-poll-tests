@@ -19,6 +19,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+
+    - name: Create Allure results directory
+      run: mkdir -p target/allure-results
       
     - name: Build Maven project
       run: mvn -B clean compile
