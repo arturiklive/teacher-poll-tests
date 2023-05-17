@@ -1,4 +1,4 @@
-name: Java CI Maven EDURIO Survey auto tests
+name: CI EDURIO Survey auto tests
 
 on:
   push:
